@@ -98,15 +98,31 @@ diretor_t *diretores_obtem_diretor_indice(int indice) {
 
 void diretores_mostra_diretor(diretor_t *diretor) {
     if (!diretor) return;
-    printf("[%d] %s (* %s, %02d/%02d/%04d)\n",
-        diretor->id,
-        diretor->nome,
-        diretor->local_nascimento,
-        diretor->data_nascimento.dia,
-        diretor->data_nascimento.mes,
-        diretor->data_nascimento.ano
-    );
+    if (diretor->data_falecimento.ano != -1 && strcmp(diretor->local_falecimento, "-") != 0) {
+        printf("[%d] %s (* %s, %02d/%02d/%04d;+ %s, %02d/%02d/%04d)\n",
+            diretor->id,
+            diretor->nome,
+            diretor->local_nascimento,
+            diretor->data_nascimento.dia,
+            diretor->data_nascimento.mes,
+            diretor->data_nascimento.ano,
+            diretor->local_falecimento,
+            diretor->data_falecimento.dia,
+            diretor->data_falecimento.mes,
+            diretor->data_falecimento.ano
+        );
+    } else {
+        printf("[%d] %s (* %s, %02d/%02d/%04d)\n",
+            diretor->id,
+            diretor->nome,
+            diretor->local_nascimento,
+            diretor->data_nascimento.dia,
+            diretor->data_nascimento.mes,
+            diretor->data_nascimento.ano
+        );
+    }
 }
+
 void diretores_mostra() {
     for (int i = 0; i < num_diretores; i++) {
         diretores_mostra_diretor(&diretores[i]);
