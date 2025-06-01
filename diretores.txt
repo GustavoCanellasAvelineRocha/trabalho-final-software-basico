@@ -1,0 +1,180 @@
+1
+Woody Allen
+Nova Iorque
+30
+11
+1935
+-
+-1
+-1
+-1
+2
+Steven Spielberg
+Cincinnati
+18
+12
+1946
+-
+-1
+-1
+-1
+3
+Pedro Almodóvar
+Calzada de Calatrava
+25
+9
+1949
+-
+-1
+-1
+-1
+4
+Martin Scorsese
+Nova Iorque
+17
+11
+1942
+-
+-1
+-1
+-1
+5
+Quentin Tarantino
+Knoxville
+27
+3
+1963
+-
+-1
+-1
+-1
+6
+Tim Burton
+Burbank
+25
+8
+1958
+-
+-1
+-1
+-1
+7
+Francis Ford Coppola
+Detroit
+7
+4
+1939
+-
+-1
+-1
+-1
+8
+Clint Eastwood
+São Francisco
+31
+5
+1930
+-
+-1
+-1
+-1
+9
+Walter Salles
+Rio de Janeiro
+12
+4
+1956
+-
+-1
+-1
+-1
+10
+Roman Polanski
+Paris
+18
+8
+1933
+-
+-1
+-1
+-1
+11
+Ridley Scott
+South Shields
+30
+11
+1937
+-
+-1
+-1
+-1
+12
+Werner Herzog
+Munique
+5
+9
+1942
+-
+-1
+-1
+-1
+13
+John Woo
+Guangzhou
+1
+5
+1946
+-
+-1
+-1
+-1
+14
+James Cameron
+Kapuskasing
+16
+8
+1954
+-
+-1
+-1
+-1
+15
+Christopher Nolan
+Londres
+30
+7
+1970
+-
+-1
+-1
+-1
+16
+Gus Van Sant
+Louisville
+24
+7
+1952
+-
+-1
+-1
+-1
+17
+Steven Soderbergh
+Atlanta
+14
+1
+1963
+-
+-1
+-1
+-1
+18
+Tony Scott
+Tynemouth
+21
+7
+1944
+Los Angeles
+19
+8
+2012

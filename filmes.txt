@@ -1,0 +1,400 @@
+1
+O Homem Irracional
+2015
+1
+2
+Magia ao Luar
+2014
+1
+3
+Meia-Noite em Paris
+2011
+1
+4
+Você Vai Conhecer o Homem dos Seus Sonhos
+2010
+1
+5
+Vicky Cristina Barcelona
+2008
+1
+6
+Scoop - O Grande Furo
+2006
+1
+7
+Match Point - Ponto Final
+2005
+1
+8
+Celebridades
+1998
+1
+9
+Desconstruindo Harry
+1997
+1
+10
+Todos Dizem Eu Te Amo
+1996
+1
+11
+Ponte dos Espiões
+2015
+2
+12
+Indiana Jones e o Reino da Caveira de Cristal
+2008
+2
+13
+Guerra dos Mundos
+2005
+2
+14
+O Terminal
+2004
+2
+15
+Prenda-me Se For Capaz
+2002
+2
+16
+Minority Report - A Nova Lei
+2002
+2
+17
+O Resgate do Soldado Ryan
+1998
+2
+18
+Amistad
+1997
+2
+19
+Hook - A Volta do Capitão Gancho
+1991
+2
+20
+Indiana Jones e a Última Cruzada
+1989
+2
+21
+A Pele Que Habito
+2011
+3
+22
+Abraços Partidos
+2009
+3
+23
+Volver
+2006
+3
+24
+O Lobo de Wall Street
+2013
+4
+25
+Ilha do Medo
+2010
+4
+26
+Os Infiltrados
+2006
+4
+27
+O Aviador
+2004
+4
+28
+Gangues de Nova York
+2002
+4
+29
+Vivendo no Limite
+1999
+4
+30
+Cassino
+1995
+4
+31
+Os Oito Odiados
+2015
+5
+32
+Django Livre
+2012
+5
+33
+Bastardos Inglórios
+2009
+5
+34
+Kill Bill: Vol. 2
+2004
+5
+35
+Kill Bill: Vol. 1
+2003
+5
+36
+Jackie Brown
+1997
+5
+37
+Grande Hotel
+1995
+5
+38
+Tempo de Violência
+1994
+5
+39
+O Lar das Crianças Peculiares
+2016
+6
+40
+Sombras da Noite
+2012
+6
+41
+Alice no País das Maravilhas
+2010
+6
+42
+Sweeney Todd - O Barbeiro Demoníaco da Rua Fleet
+2007
+6
+43
+A Fantástica Fábrica de Chocolate
+2005
+6
+44
+A Lenda do Cavaleiro Sem Cabeça
+1999
+6
+45
+Marte Ataca!
+1996
+6
+46
+Ed Wood
+1994
+6
+47
+Edward Mãos de Tesoura
+1990
+6
+48
+Batman
+1989
+6
+49
+Velha Juventude
+2007
+7
+50
+O Homem Que Fazia Chover
+1997
+7
+51
+Jack
+1996
+7
+52
+O Poderoso Chefão 3
+1990
+7
+53
+O Poderoso Chefão 2
+1974
+7
+54
+O Poderoso Chefão
+1972
+7
+55
+Sully: O Herói do Rio Hudson
+2016
+8
+56
+J. Edgar
+2011
+8
+57
+Além da Vida
+2010
+8
+58
+Invictus
+2009
+8
+59
+A Troca
+2008
+8
+60
+Menina de Ouro
+2004
+8
+61
+Paris, Te Amo
+2006
+9
+62
+O Último Portal
+1999
+10
+63
+Perdido em Marte
+2015
+11
+64
+O Conselheiro do Crime
+2013
+11
+65
+Rede de Mentiras
+2008
+11
+66
+O Gângster
+2007
+11
+67
+Rainha do Deserto
+2015
+12
+68
+Vício Frenético
+2009
+12
+69
+O Pagamento
+2003
+13
+70
+Códigos de Guerra
+2002
+13
+71
+Missão Impossível 2
+2000
+13
+72
+A Outra Face
+1997
+13
+73
+Titanic
+1997
+14
+74
+Interestelar
+2014
+15
+75
+Batman: O Cavaleiro das Trevas Ressurge
+2012
+15
+76
+A Origem
+2010
+15
+77
+Batman - O Cavaleiro das Trevas
+2008
+15
+78
+O Grande Truque
+2006
+15
+79
+Batman Begins
+2005
+15
+80
+Insônia
+2002
+15
+81
+Terra Prometida
+2012
+16
+82
+Uma Voz nas Sombras
+2002
+16
+83
+Encontrando Forrester
+2000
+16
+84
+Gênio Indomável
+1997
+16
+85
+Minha Vida com Liberace
+2013
+17
+86
+Contágio
+2011
+17
+87
+A Toda Prova
+2011
+17
+88
+O Desinformante!
+2009
+17
+89
+Treze Homens e um Novo Segredo
+2007
+17
+90
+Doze Homens e Outro Segredo
+2004
+17
+91
+Onze Homens e um Segredo
+2001
+17
+92
+Erin Brockovich, uma Mulher de Talento
+2000
+17
+93
+Déjà Vu
+2006
+18
+94
+O Sequestro do Metrô 1 2 3
+2009
+18
+95
+Incontrolável
+2010
+18
+96
+Chamas da Vingança
+2004
+18
+97
+Jogo de Espiões
+2001
+18
+98
+Inimigo do Estado
+1998
+18
+99
+Estranha Obsessão
+1996
+18
+100
+Maré Vermelha
+1995
+18
