@@ -1,4 +1,14 @@
-// diretores.h (Caio Batista; 01 junho 2025)
+/* 
+**
+** Nome do Arquivo: diretores.h
+**
+** Nome do Autor: Caio Araujo Batista
+**
+** Finalidade do Programa: Declarar as funções e tipos de diretores
+**
+** Data de criação: 01/06/2025
+**
+*/
 
 #define TAM_LOCAL 30
 #define TAM_NOME 60 

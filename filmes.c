@@ -1,4 +1,14 @@
-// filmes.c (Caio Batista; 01 junho 2025)
+/* 
+**
+** Nome do Arquivo: filmes.c
+**
+** Nome do Autor: Caio Araujo Batista
+**
+** Finalidade do Programa: Implementar as funções de filmes
+**
+** Data de criação: 01/06/2025
+**
+*/
 
 #include "filmes.h"
 #include "diretores.h"

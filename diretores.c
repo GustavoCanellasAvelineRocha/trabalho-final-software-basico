@@ -1,4 +1,14 @@
-// diretores.c (Caio Batista; 01 junho 2025)
+/* 
+**
+** Nome do Arquivo: diretores.c
+**
+** Nome do Autor: Caio Araujo Batista
+**
+** Finalidade do Programa: Implementar as funções de diretores
+**
+** Data de criação: 01/06/2025
+**
+*/
 
 #include "diretores.h"
 #include <stdio.h>

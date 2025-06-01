@@ -1,4 +1,14 @@
-// app3.cpp (Roland Teodorowitsch; 15 maio 2025)
+/* 
+**
+** Nome do Arquivo: app3.c
+**
+** Nome do Autor: Caio Araujo Batista
+**
+** Finalidade do Programa: Testar as funções de filmes
+**
+** Data de criação: 01/06/2025
+**
+*/
 
 #include <stdio.h>
 #include "filmes.h"

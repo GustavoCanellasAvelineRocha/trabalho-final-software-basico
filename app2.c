@@ -1,4 +1,14 @@
-// app2.cpp (Roland Teodorowitsch; 14 maio 2025)
+/* 
+**
+** Nome do Arquivo: app2.c
+**
+** Nome do Autor: Caio Araujo Batista
+**
+** Finalidade do Programa: Testar as funções de diretores
+**
+** Data de criação: 01/06/2025
+**
+*/
 
 #include <stdio.h>
 #include "diretores.h"
