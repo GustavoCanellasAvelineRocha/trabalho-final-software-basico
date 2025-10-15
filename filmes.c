@@ -1,121 +1,77 @@
-/* 
-**
-** Nome do Arquivo: filmes.c
-**
-** Nome do Autor: Caio Araujo Batista
-**
-** Finalidade do Programa: Implementar as funções de filmes
-**
-** Data de criação: 01/06/2025
-**
-*/
+#include <ctype.h>
 
-#include "filmes.h"
-#include "diretores.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+static int ci_char(int c){ return tolower((unsigned char)c); }
 
-#define TAM_LINHA 200
-
-filme_t filmes[MAX_FILMES];
-int num_filmes = 0;
-
-int filmes_menor(filme_t *a1, filme_t *a2) {
-    return strcmp(a1->titulo, a2->titulo) < 0;
+static int ci_contains(const char *hay, const char *needle){
+    if(!hay || !needle || !*needle) return 0;
+    size_t nlen = strlen(needle);
+    for(const char *p = hay; *p; ++p){
+        size_t i = 0;
+        while(p[i] && i < nlen && ci_char(p[i]) == ci_char(needle[i])) i++;
+        if(i == nlen) return 1;
+    }
+    return 0;
 }
 
-int filmes_carrega(char *nome_arq) {
-    FILE *in = fopen(nome_arq, "r");
-    if (in == NULL) return 0;
-    char linha[TAM_LINHA+1];
-    size_t t;
+int filmes_existe_id(int id){
+    return filmes_obtem_filme_id(id) != NULL;
+}
 
-    while (1) {
-        if (fgets(linha, TAM_LINHA, in) == NULL) break;
-        filmes[num_filmes].id = atoi(linha);
-
-        if (fgets(linha, TAM_LINHA, in) == NULL) break;
-        t = strlen(linha);
-        if (linha[t-1] == '\n') linha[t-1] = '\0';
-        strncpy(filmes[num_filmes].titulo, linha, TAM_TITULO);
-        filmes[num_filmes].titulo[TAM_TITULO] = '\0';
-
-        if (fgets(linha, TAM_LINHA, in) == NULL) break;
-        filmes[num_filmes].ano_lancamento = atoi(linha);
-
-        if (fgets(linha, TAM_LINHA, in) == NULL) break;
-        filmes[num_filmes].id_diretor = atoi(linha);
-
-        ++num_filmes;
-        if (num_filmes == MAX_FILMES) break;
-    }
-    fclose(in);
+int filmes_insere(const filme_t *novo){
+    if(!novo) return 0;
+    if(num_filmes >= MAX_FILMES) return 0;
+    if(filmes_existe_id(novo->id)) return 0;
+    filmes[num_filmes] = *novo;
+    num_filmes++;
     return 1;
 }
 
-int filmes_num_filmes() {
-    return num_filmes;
-}
-
-filme_t *filmes_obtem_filme_id(int id) {
-    for (int i = 0; i < num_filmes; i++) {
-        if (filmes[i].id == id) {
-            return &filmes[i];
+int filmes_remove_por_id(int id){
+    for(int i=0;i<num_filmes;i++){
+        if(filmes[i].id == id){
+            for(int j=i+1;j<num_filmes;j++) filmes[j-1] = filmes[j];
+            num_filmes--;
+            return 1;
         }
     }
-    return NULL;
+    return 0;
 }
 
-filme_t *filmes_obtem_filme_indice(int indice) {
-    if (indice >= 0 && indice < num_filmes) {
-        return &filmes[indice];
+int filmes_atualiza_por_id(int id, const char *novo_titulo, int novo_ano, int novo_id_diretor){
+    filme_t *f = filmes_obtem_filme_id(id);
+    if(!f) return 0;
+    if(novo_titulo && *novo_titulo){
+        strncpy(f->titulo, novo_titulo, TAM_TITULO);
+        f->titulo[TAM_TITULO] = '\0';
     }
-    return NULL;
+    if(novo_ano > 0) f->ano_lancamento = novo_ano;
+    if(novo_id_diretor > 0) f->id_diretor = novo_id_diretor;
+    return 1;
+}
+
+int filmes_busca_por_titulo(const char *termo, int *indices, int max_indices){
+    if(!termo || !indices || max_indices<=0) return 0;
+    int k = 0;
+    for(int i=0;i<num_filmes;i++){
+        if(ci_contains(filmes[i].titulo, termo)){
+            if(k < max_indices) indices[k] = i;
+            k++;
+        }
+    }
+    return k;
+}
+
+void filmes_limpa(void){
+    num_filmes = 0;
 }
 
 void filmes_mostra_filme(filme_t *filme) {
     if (!filme) return;
     diretor_t *diretor = diretores_obtem_diretor_id(filme->id_diretor);
-    printf("[%d] %s (%d) - %s\n", 
-        filme->id, 
-        filme->titulo, 
-        filme->ano_lancamento, 
-        diretor->nome);
-}
-
-void filmes_mostra() {
-    for (int i = 0; i < num_filmes; i++) {
-        filmes_mostra_filme(&filmes[i]);
-    }
-}
-
-void filmes_ordena() {
-    for(int i = 0; i < num_filmes; i++) {
-        int men = i;
-        for(int j = i+1; j < num_filmes; j++) {
-            if(filmes_menor(&filmes[j], &filmes[men])) {
-                men = j;
-            }
-        }
-
-        if(men != i) {
-            filme_t aux = filmes[men];
-            filmes[men] = filmes[i];
-            filmes[i] = aux;
-        }
-    }
-}
-
-int filmes_salva(char *nome_arq) {
-    FILE *out = fopen(nome_arq, "w");
-    if (out == NULL) return 0;
-    for (int i = 0; i < num_filmes; i++) {
-        fprintf(out, "%d\n", filmes[i].id);
-        fprintf(out, "%s\n", filmes[i].titulo);
-        fprintf(out, "%d\n", filmes[i].ano_lancamento);
-        fprintf(out, "%d\n", filmes[i].id_diretor);
-    }
-    fclose(out);
-    return 1;
+    const char *nome_dir = (diretor && diretor->nome) ? diretor->nome : "(diretor desconhecido)";
+    printf("[%d] %s (%d) - %s\n",
+        filme->id,
+        filme->titulo,
+        filme->ano_lancamento,
+        nome_dir);
 }
